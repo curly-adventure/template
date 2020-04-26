@@ -34,15 +34,15 @@ strong { font-weight: 500; }
 
 .dismiss:hover, .dismiss:focus { background: #555; color: #fff; }
 
-.sidebar .logo { padding: 20px 20px; border-bottom: 1px solid #444; transition: all .3s; }
+.sidebar .logo { padding: 10px 10px; border-bottom: 1px solid #444; transition: all .3s; }
 
 .sidebar .logo a {
 	display: inline-block;
 	width: 180px;
-	height: 70px;
-	background: url(../images/logo.jpg) left top no-repeat;
+	height: 100px;
+	background: url(../images/logo.png) left top no-repeat;
 	border: 0;
-	background-size: cover;
+	
 	text-indent: -999999px;
 }
 
@@ -94,7 +94,7 @@ strong { font-weight: 500; }
 .sidebar.light .dismiss:focus { background: #ccc; color: #888; }
 
 .sidebar.light .logo { border-color: #eee; }
-.sidebar.light .logo a { background-image: url(../img/logo-dark.png); }
+.sidebar.light .logo a { background-image: url(../images/logo.png); }
 
 .sidebar.light ul.menu-elements { border-color: #eee; }
 
