@@ -34,25 +34,7 @@
 <!-- custom javascript -->
 <script src="js/script.js" type="text/javascript"></script>
 <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-<script type="text/javascript">
-/// some script
 
-// jquery ready start
-$(document).ready(function() {
-	// jQuery code
-	$(function () {
-			$(window).scroll(function () {
-				if ($(this).scrollTop() > 200 ) { 
-					$('#scrollUp').css('right','10px');
-				} else { 
-					$('#scrollUp').removeAttr( 'style' );
-				}
-
-			});
-		});
-}); 
-// jquery end
-</script>
 
 </head>
 <body>
@@ -151,7 +133,7 @@ $(document).ready(function() {
 		<a href="#top"><img src="images/to_top.png"/></a>
 	</div>
 	<nav class="navbar  fixed-top navbar-dark bg-dark  d-lg-none" style="height: 70px;">
-		<a class="btn btn-primary open-menu" href="#" role="button"><i class="fa fa-bars"></i><!--<i class="fas fa-align-left"></i> --></a>
+		<a class="btn open-menu" href="#" role="button" style="font-size: 20px;"><i class="fa fa-bars"></i><!--<i class="fas fa-align-left"></i> --></a>
 		<a class="navbar-brand"><img class="logo" src="images/logo-dark.png"></a>
 		<div class="col-4">
 			
@@ -183,11 +165,13 @@ $(document).ready(function() {
 		</div>
 		
 	  </nav>
-<section class="header-main shadow-sm fixed d-none d-lg-block">
-	<div class="container">
+<section class=" d-none d-lg-block  ">
+	<div class=" navbar-dark bg-dark" id="manav" style="z-index: 999;width: 100%; margin-top:0;padding: 10px;position: fixed;">
 <div class="row-sm align-items-center" style="z-index: 100;">
 	<div class="col-lg-4-24 col-sm-3">
+		
 		<div class="brand-wrap">
+			<a class="btn open-menu" href="#" role="button" style="font-size: 20px;"><i class="fa fa-bars"></i></a>
 			<img class="logo" src="images/logo-dark.png">
 			<h2 class="logo-text">Eblack</h2>
 		</div> 
@@ -196,7 +180,7 @@ $(document).ready(function() {
 			<form action="#" class="py-1 search-header " >
 				<div class="input-group w-100" >
 					
-					<input type="text" class="form-control" style="border:2px solid #0069FF;border-left: transparent;" placeholder="chercher un produit, une marque ou une categorie">
+					<input type="text" class="form-control"  style="border:2px solid #0069FF;"placeholder="chercher un produit, une marque ou une categorie">
 					<div class="input-group-append">
 					  <button class="btn btn-primary" type="submit">
 						<i class="fa fa-search"> Chercher</i>
@@ -205,7 +189,7 @@ $(document).ready(function() {
 			    </div>
 			</form> <!-- search-wrap .end// -->
 	</div> <!-- col.// -->
-	<div class="col-lg-9-24 col-sm-12">
+	<div class="col-lg-8-24 col-sm-12">
 		<div class="widgets-wrap float-right row no-gutters py-1">
 			<div class="col-auto">
 				<div class="widget-header dropdown">
@@ -903,10 +887,24 @@ $(document).ready(function() {
 </div>
 <!-- End wrapper -->
 <script src="js/scripts.js"></script>
-<script>
-	jQuery(function(){
-		
-	});
-</script>
+<script type="text/javascript">
+	/// some script
+	
+	// jquery ready start
+	$(document).ready(function() {
+		// jQuery code
+		$(function () {
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > 200 ) { 
+						$('#manav').css('position','fixed');
+					} else { 
+						$('#manav').removeAttr( 'style' );
+					}
+	
+				});
+			});
+	}); 
+	// jquery end
+	</script>
 </body>
 </html>
