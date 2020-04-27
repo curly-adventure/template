@@ -105,6 +105,27 @@ $(document).ready(function() {
         }); // each end.//
     }
 	
+		/////////////////  items slider. /plugins/owlslider/
+		if ($('.slider-items-owl').length > 0) { // check if element exists
+			$('.slider-items-owl').owlCarousel({
+				loop:true,
+				margin:10,
+				nav:true,
+				navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+				responsive:{
+					0:{
+						items:1
+					},
+					640:{
+						items:3
+					},
+					1024:{
+						items:4
+					}
+				}
+			})
+		} // end if
+	 
 
 }); 
 // jquery end
