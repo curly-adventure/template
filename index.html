@@ -62,9 +62,9 @@
 				<form action="#" class="py-1 search-header d-lg-none" >
 					<div class="input-group " >
 						
-						<input type="text" class="form-control"  placeholder="chercher un produit, une marque ou une categorie">
+						<input type="text" class="form-control"  placeholder="Entrer votre recherche">
 						<div class="input-group-append">
-						  <button class="btn btn-primary" type="submit">
+						  <button  onclick="if(!$(search).value) return false;" class="btn btn-primary" type="submit">
 							<i class="fa fa-search"></i>
 						  </button>
 						</div>
@@ -191,9 +191,9 @@
 			<form action="#" class="py-1 search-header " >
 				<div class="input-group w-100" >
 					
-					<input type="text" class="form-control"  style="border:2px solid #0069FF;"placeholder="chercher un produit, une marque ou une categorie">
+					<input type="text" class="form-control"  style="border:2px solid #0069FF;"placeholder="Taper votre recherche (ex: tshirt rouge)">
 					<div class="input-group-append">
-					  <button class="btn btn-primary" type="submit">
+					  <button onclick="if(!$(search).value) return false;" class="btn btn-primary" type="submit" style="border: 1px solid #0069FF;">
 						<i class="fa fa-search"> Chercher</i>
 					  </button>
 					</div>
@@ -216,6 +216,7 @@
 						<style>#b:hover{background-color: rgba(0, 0, 255, 0.25);;}</style>
 						</center>	
 					</div>  dropdown-menu .// -->
+
 				</div>  <!-- widget-header .// -->
 			</div> <!-- col.// -->
 			<div class="widget-header col-auto">
@@ -261,11 +262,12 @@
   <ol class="carousel-indicators">
     <li data-target="#carousel1_indicator" data-slide-to="0" class="active"></li>
     <li data-target="#carousel1_indicator" data-slide-to="1" class=""></li>
-    <li data-target="#carousel1_indicator" data-slide-to="2" class=""></li>
+	<li data-target="#carousel1_indicator" data-slide-to="2" class=""></li>
+	<li data-target="#carousel1_indicator" data-slide-to="3" class=""></li>
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active item-slide">
-	  <img src="images/banners/slide.gif" alt="Première diapositive"> 
+	  <img src="images/banners/slide1.png" alt="Première diapositive"> 
 	  <div class="carousel-caption">
         <h1> <a href="">SHOP</a></h1>
       </div>
@@ -274,8 +276,11 @@
       <img src="images/banners/slide2.png" alt="Deuxième diapositive">
     </div>
     <div class="carousel-item item-slide">
-      <img src="images/banners/slide3.jpg" alt="Troisième diapositive">
-    </div>
+      <img src="images/banners/slide3.png" alt="Troisième diapositive">
+	</div>
+	<div class="carousel-item item-slide">
+		<img src="images/banners/slide4.png" alt="Troisième diapositive">
+	  </div>
   </div>
   <a class="carousel-control-prev" href="#carousel1_indicator" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -333,7 +338,7 @@
 </div>  container .//  -->
 </section>
 <!-- ========================= SECTION MAIN END// ========================= -->
-
+<!-- 
 <div class="card reveal">
 	<div class="row no-gutters">
 	<div class="col-md-3">
@@ -345,9 +350,8 @@
 			<img src="images/eblackSale.png"  class="img-bg zoom-in" style="width:100%;height:100%;object-fit: cover;z-index: -1;">
 		</div>
 	</article>
-	
-		</div> <!-- col.// -->
-		<div class="col-md-9 row reveal ">
+		</div> 
+		<div class="col-md-9  ">
 			<div class="col-md-4 float-right reveal-1">
 				<figure class="card card-product">
 					<span class="badge-offer"><b> - 50%</b></span>
@@ -368,7 +372,7 @@
 								</ul>
 								<div class="label-rating">132 reviews</div>
 								<div class="label-rating">154 orders </div>
-							</div> <!-- rating-wrap.// -->
+							</div> 
 					</figcaption>
 					<div class="bottom-wrap">
 						<a href="" class="btn btn-outline-secondary btn-sm float-right">acheter</a>
@@ -376,10 +380,10 @@
 						<a href="" class="btn btn-outline-warning btn-sm float-right"><i class="fa fa-heart"></i></a>			
 						<div class="price-wrap h5">
 							<span class="price-new">$1280</span> <del class="price-old">$1980</del>
-						</div> <!-- price-wrap.// -->
-					</div> <!-- bottom-wrap.// -->
+						</div>
+					</div> 
 				</figure>
-			</div> <!-- col // -->
+			</div> 
 			<div class="col-md-4 float-right reveal-2">
 				<figure class="card card-product">
 					<div class="img-wrap"><img src="images/items/2.jpg"> </div>
@@ -397,16 +401,16 @@
 								</ul>
 								<div class="label-rating">132 reviews</div>
 								<div class="label-rating">154 orders </div>
-							</div> <!-- rating-wrap.// -->
+							</div> 
 					</figcaption>
 					<div class="bottom-wrap">
 							<a href="" class="btn btn-sm btn-primary float-right">Order Now</a>	
 							<div class="price-wrap h5">
 								<span class="price-new">$1280</span> <del class="price-old">$1980</del>
-							</div> <!-- price-wrap.// -->
-					</div> <!-- bottom-wrap.// -->
+							</div> 
+					</div> 
 				</figure>
-			</div> <!-- col // -->
+			</div> 
 			<div class="col-md-4 float-right reveal-3">
 				<figure class="card card-product">
 					<div class="img-wrap"><img src="images/items/3.jpg"></div>
@@ -424,28 +428,28 @@
 								</ul>
 								<div class="label-rating">132 reviews</div>
 								<div class="label-rating">154 orders </div>
-							</div> <!-- rating-wrap.// -->
+							</div> 
 					</figcaption>
 					<div class="bottom-wrap">
 							<a href="" class="btn btn-sm btn-primary float-right">Order Now</a>	
 							<div class="price-wrap h5">
 								<span class="price-new">$1280</span> <del class="price-old">$1980</del>
-							</div> <!-- price-wrap.// -->
-					</div> <!-- bottom-wrap.// -->
+							</div> 
+					</div> 
 				</figure>
-			</div> <!-- col // -->
+			</div> 
 			
-		</div> <!-- col.// -->
-	</div> <!-- row.// -->
+		</div> 
+	</div>  
 		
-	</div>
+	</div>-->
 
 <!-- ========================= SECTION CONTENT ========================= -->
 <section class="section-content padding-y-sm bg reveal">
 <div class="container">
 
 <header class="section-heading heading-line reveal-1">
-	<h4 class="title-section bg">POPULAIRE</h4>
+	<h4 class="title-section bg">NOUVEAUTES</h4>
 </header>
 
 <div class="card">
@@ -454,10 +458,10 @@
 	
 <article href="#" class="card-banner h-100 reveal-2"style="background-color: #FFDCB0">
 	<div class="card-body zoom-wrap">
-		<h5 class="title">Les plus vendu</h5>
-		<p>les meilleurs produits, les plus vendu sur eblack mpor incididunt ut labore et dolore magna aliqua.</p>
-		<a href="#" class="btn btn-outline-warning  round" style="width: 100px;z-index: 999999;">Explorer</a>
-		<img src="images/marque.gif" style="width:100%;height:100%;z-index: -1;" class="img-bg zoom-in">
+		<!--<h5 class="title">Les plus vendu</h5>
+		<p>les meilleurs produits, les plus vendu sur eblack mpor incididunt ut labore et dolore magna aliqua.</p>-->
+		<a href="#" class="btn btn-outline-primary  round" style="width: 100px;z-index: 999999;">Explorer</a>
+		<img src="images/h_chemise-motif-carrly.jpg" style="width:100%;height:100%;z-index: -1;" class="img-bg zoom-in">
 	</div>
 </article>
 <style>
@@ -471,7 +475,7 @@
 	<li class="col-6 col-md-3">
 	<a href="#" class="itembox"> 
 		<div class="card-body">
-		<p class="word-limit">chemise carreaux multicouleur</p>
+		<p class="word-limit">sac a main rouge</p>
 		<div class="price-wrap h6 float-left">
 			<span class="price-new">$1280</span> <del class="price-old ">$1980</del>
 		</div>
@@ -491,7 +495,7 @@
 	<li class="col-6 col-md-3">
 		<a href="#" class="itembox"> 
 			<div class="card-body">
-			<p class="word-limit">iphine 11</p>
+			<p class="word-limit">iphone 11</p>
 			<div class="price-wrap h6 float-left">
 				<span class="price-new">$1280</span> <del class="price-old ">$1980</del>
 			</div>
@@ -511,12 +515,12 @@
 		<li class="col-6 col-md-3">
 			<a href="#" class="itembox"> 
 				<div class="card-body">
-				<p class="word-limit">robe de nuit</p>
+				<p class="word-limit">chemise manches longues bas arrondi femme blanc</p>
 				<div class="price-wrap h6 float-left">
 					<span class="price-new">$1280</span> <del class="price-old ">$1980</del>
 				</div>
 				<div class="float-right">
-					<img class="img-sm float-right " src="images/items/5.jpg">
+					<img class="img-sm float-right " src="images/items/14.jpg">
 				</div>
 				
 				<div class="bottom-wrap">
@@ -551,37 +555,85 @@
 </ul>
 <ul class="row no-gutters border-cols">
 	<li class="col-6 col-md-3">
-<a href="#" class="itembox"> 
-	<div class="card-body">
-		<p class="word-limit">Home and kitchen electronic stuff </p>
-		<img class="img-sm" src="images/items/1.jpg">
-	</div>
-</a>
+	<a href="#" class="itembox"> 
+		<div class="card-body">
+		<p class="word-limit">sac a main rouge</p>
+		<div class="price-wrap h6 float-left">
+			<span class="price-new">$1280</span> <del class="price-old ">$1980</del>
+		</div>
+		<div class="float-right">
+			<img class="img-sm float-right " src="images/items/2.jpg">
+		</div>
+		
+		<div class="bottom-wrap">
+			<a href="" class="btn btn-outline-primary btn-sm float-left"><i class="fa fa-heart"></i></a>			
+			<span class="float-right"> &nbsp;&nbsp;</span>
+			<a href="" class="btn btn-outline-primary btn-sm float-right"><i class="fa fa-shopping-cart"></i></a>
+			<!-- price-wrap.// -->
+		</div>
+		</div>
+	</a>
 	</li>
 	<li class="col-6 col-md-3">
-<a href="#" class="itembox"> 
-	<div class="card-body">
-		<p class="word-limit">Kitchen equipments collection</p>
-		<img class="img-sm" src="images/items/2.jpg">
-	</div>
-</a>
-	</li>
-	<li class="col-6 col-md-3">
-<a href="#" class="itembox"> 
-	<div class="card-body">
-		<p class="word-limit">Accessiries and other good items</p>
-		<img class="img-sm" src="images/items/3.jpg">
-	</div>
-</a>
-	</li>
-	<li class="col-6 col-md-3">
-<a href="#" class="itembox"> 
-	<div class="card-body">
-		<p class="word-limit">Techs, Electronics</p>
-		<img class="img-sm" src="images/items/4.jpg">
-	</div>
-</a>	
-	</li>
+		<a href="#" class="itembox"> 
+			<div class="card-body">
+			<p class="word-limit">iphone 11</p>
+			<div class="price-wrap h6 float-left">
+				<span class="price-new">$1280</span> <del class="price-old ">$1980</del>
+			</div>
+			<div class="float-right">
+				<img class="img-sm float-right " src="images/items/9.jpg">
+			</div>
+			
+			<div class="bottom-wrap">
+				<a href="" class="btn btn-outline-primary btn-sm float-left"><i class="fa fa-heart"></i></a>			
+				<span class="float-right"> &nbsp;&nbsp;</span>
+				<a href="" class="btn btn-outline-primary btn-sm float-right"><i class="fa fa-shopping-cart"></i></a>
+				<!-- price-wrap.// -->
+			</div>
+			</div>
+		</a>
+		</li>
+		<li class="col-6 col-md-3">
+			<a href="#" class="itembox"> 
+				<div class="card-body">
+				<p class="word-limit">chemise manches longues bas arrondi femme blanc</p>
+				<div class="price-wrap h6 float-left">
+					<span class="price-new">$1280</span> <del class="price-old ">$1980</del>
+				</div>
+				<div class="float-right">
+					<img class="img-sm float-right " src="images/items/10.jpg">
+				</div>
+				
+				<div class="bottom-wrap">
+					<a href="" class="btn btn-outline-primary btn-sm float-left"><i class="fa fa-heart"></i></a>			
+					<span class="float-right"> &nbsp;&nbsp;</span>
+					<a href="" class="btn btn-outline-primary btn-sm float-right"><i class="fa fa-shopping-cart"></i></a>
+					<!-- price-wrap.// -->
+				</div>
+				</div>
+			</a>
+		</li>
+		<li class="col-6 col-md-3">
+			<a href="#" class="itembox"> 
+				<div class="card-body">
+				<p class="word-limit">chaussure nike</p>
+				<div class="price-wrap h6 float-left">
+					<span class="price-new">$1280</span> <del class="price-old ">$1980</del>
+				</div>
+				<div class="float-right">
+					<img class="img-sm float-right " src="images/items/11.jpg">
+				</div>
+				
+				<div class="bottom-wrap">
+					<a href="" class="btn btn-outline-primary btn-sm float-left"><i class="fa fa-heart"></i></a>			
+					<span class="float-right"> &nbsp;&nbsp;</span>
+					<a href="" class="btn btn-outline-primary btn-sm float-right"><i class="fa fa-shopping-cart"></i></a>
+					<!-- price-wrap.// -->
+				</div>
+				</div>
+			</a>
+			</li>
 </ul>
 	</div> <!-- col.// -->
 </div> <!-- row.// -->
@@ -593,176 +645,212 @@
 <!-- ========================= SECTION CONTENT END// ========================= -->
 
 <!-- ========================= SECTION CONTENT ========================= -->
-<section class="section-content padding-y-sm bg">
-<div class="container">
-
-<header class="section-heading heading-line">
-	<h4 class="title-section bg text-uppercase">Food & Beverage</h4>
-</header>
-
-<div class="card">
-<div class="row no-gutters">
-	<div class="col-md-3">
+<section class="section-content padding-y-sm bg reveal">
+	<div class="container">
 	
-<article href="#" class="card-banner h-100 bg2">
-	<div class="card-body zoom-wrap">
-		<h5 class="title">Good equipments for cooking food and cakes</h5>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. </p>
-		<a href="#" class="btn btn-warning">Explore</a>
-		<img src="images/items/item-sm.png" height="200" class="img-bg zoom-in">
-	</div>
-</article>
-
-	</div> <!-- col.// -->
-	<div class="col-md-9">
-<ul class="row no-gutters border-cols">
-	<li class="col-6 col-md-3">
-<a href="#" class="itembox"> 
-	<div class="card-body">
-		<p class="word-limit">Home and kitchen electronic  stuff collection  </p>
-		<img class="img-sm" src="images/items/1.jpg">
-	</div>
-</a>
-	</li>
-	<li class="col-6 col-md-3">
-<a href="#" class="itembox"> 
-	<div class="card-body">
-		<p class="word-limit">Kitchen equipments collection</p>
-		<img class="img-sm" src="images/items/2.jpg">
-	</div>
-</a>
-	</li>
-	<li class="col-6 col-md-3">
-<a href="#" class="itembox"> 
-	<div class="card-body">
-		<p class="word-limit">Accessiries and other good items</p>
-		<img class="img-sm" src="images/items/3.jpg">
-	</div>
-</a>
-	</li>
-	<li class="col-6 col-md-3">
-<a href="#" class="itembox"> 
-	<div class="card-body">
-		<p class="word-limit">Techs, Electronics</p>
-		<img class="img-sm" src="images/items/4.jpg">
-	</div>
-</a>	
-	</li>
-</ul>
-<ul class="row no-gutters border-cols">
-	<li class="col-6 col-md-3">
-<a href="#" class="itembox"> 
-	<div class="card-body">
-		<p class="word-limit">Home and kitchen electronic stuff </p>
-		<img class="img-sm" src="images/items/1.jpg">
-	</div>
-</a>
-	</li>
-	<li class="col-6 col-md-3">
-<a href="#" class="itembox"> 
-	<div class="card-body">
-		<p class="word-limit">Kitchen equipments collection</p>
-		<img class="img-sm" src="images/items/2.jpg">
-	</div>
-</a>
-	</li>
-	<li class="col-6 col-md-3">
-<a href="#" class="itembox"> 
-	<div class="card-body">
-		<p class="word-limit">Accessiries and other good items</p>
-		<img class="img-sm" src="images/items/3.jpg">
-	</div>
-</a>
-	</li>
-	<li class="col-6 col-md-3">
-<a href="#" class="itembox"> 
-	<div class="card-body">
-		<p class="word-limit">Techs, Electronics</p>
-		<img class="img-sm" src="images/items/4.jpg">
-	</div>
-</a>	
-	</li>
-</ul>
-	</div> <!-- col.// -->
-</div> <!-- row.// -->
+	<header class="section-heading heading-line reveal-1">
+		<h4 class="title-section bg">POPULAIRES</h4>
+	</header>
 	
-</div> <!-- card.// -->
-
-</div> <!-- container .//  -->
-</section>
-<!-- ========================= SECTION CONTENT END// ========================= -->
-
-<!-- ========================= SECTION REQUEST ========================= -->
-<section class="section-request bg padding-y-sm">
-<div class="container">
-<header class="section-heading heading-line">
-	<h4 class="title-section bg text-uppercase">DEMANDE DE DEVIS</h4>
-</header>
-
-<div class="row">
-	<div class="col-md-8">
-<figure class="card-banner banner-size-lg" style="background-image:url(images/banners/tshirt.jpg) ;background-size: cover;filter: blur(0.5px);">
-	<figcaption class="overlay left">
-		<br>
-		<h2 style="max-width: 300px;">nos meilleurs produits</h2>
-		<br>
-		<a class="btn btn-warning" href="#">Detail info </a>
-	</figcaption>
-	<div style="margin: 50px;color: white;">
-	<h3 class="title" style="font-weight: bold;">Un moyen simple d'envoyer une demande aux fournisseurs</h3>
-	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ullam dignissimos <br> fugit reiciendis doloribus cum aliquid,dolore placeat velit sequi.</p>
-	<a href="" class="btn btn-primary" style="background-color: #FF5800;border: none;">En savoir plus</a>
-</div>
-	
-</figure>
-	</div> <!-- col // -->
-	<div class="col-md-4">
-
-<div class="card card-body">
-	<h5 class="title py-4">Une demande, plusieurs devis</h5>
-	<form>
-		<div class="form-group">
-			<input class="form-control" name="" type="text" placeholder="que chercher vous ?">
+	<div class="card">
+	<div class="row no-gutters">
+		<div class="col-md-3">
+		
+	<article href="#" class="card-banner h-100 reveal-2"style="background-color: #FFDCB0">
+		<div class="card-body zoom-wrap">
+			<!--<h5 class="title">Les plus vendu</h5>
+			<p>les meilleurs produits, les plus vendu sur eblack mpor incididunt ut labore et dolore magna aliqua.</p>-->
+			<a href="#" class="btn btn-outline-primary  round" style="width: 100px;z-index: 999999;">Explorer</a>
+			<img src="images/shoe.jpg" style="width:100%;height:100%;z-index: -1;" class="img-bg zoom-in">
 		</div>
-		<div class="form-group">
-			<div class="input-group">
-				<input class="form-control" name="" type="text" placeholder="quantités">
-				<span class="input-group-btn" style="border:0; width: 0;"></span>
-				<input class="form-control" name="" type="text" placeholder="taille (optionel)">
+	</article>
+	<style>
+		.word-limit{color: black;font-weight: bold;}
+		.word-limit:hover{color: blue;}
+		.price-new{color: red;}
+	</style>
+		</div> <!-- col.// -->
+		<div class="col-md-9 reveal-3">
+		<ul class="row no-gutters border-cols">
+		<li class="col-6 col-md-3">
+		<a href="#" class="itembox"> 
+			<div class="card-body">
+			<p class="word-limit">sac a main rouge</p>
+			<div class="price-wrap h6 float-left">
+				<span class="price-new">$1280</span> <del class="price-old ">$1980</del>
 			</div>
-		</div>
-		<div class="form-group text-muted">
-			<br>
-			<label class="form-check form-check-inline">
-			  <input class="form-check-input" type="checkbox" value="option1">
-			  <span class="form-check-label">Demander le prix</span>
-			</label>
-			<label class="form-check form-check-inline">
-			  <input class="form-check-input" type="checkbox" value="option2">
-			  <span class="form-check-label">Demander un echantillon</span>
-			</label>
-		</div>
-		<div class="form-group">
-			<button class="btn btn-warning" style="background-color: #FF5800;border: none;color:white">envoyer</button>
-		</div>
-	</form>
-</div>
-
-	</div> <!-- col // -->
-</div><!-- row // -->
-
-</div><!-- container // -->
-</section>
+			<div class="float-right">
+				<img class="img-sm float-right " src="images/items/5.jpg">
+			</div>
+			
+			<div class="bottom-wrap">
+				<a href="" class="btn btn-outline-primary btn-sm float-left"><i class="fa fa-heart"></i></a>			
+				<span class="float-right"> &nbsp;&nbsp;</span>
+				<a href="" class="btn btn-outline-primary btn-sm float-right"><i class="fa fa-shopping-cart"></i></a>
+				<!-- price-wrap.// -->
+			</div>
+			</div>
+		</a>
+		</li>
+		<li class="col-6 col-md-3">
+			<a href="#" class="itembox"> 
+				<div class="card-body">
+				<p class="word-limit">T-shirt 11</p>
+				<div class="price-wrap h6 float-left">
+					<span class="price-new">$1280</span> <del class="price-old ">$1980</del>
+				</div>
+				<div class="float-right">
+					<img class="img-sm float-right " src="images/items/6.jpg">
+				</div>
+				
+				<div class="bottom-wrap">
+					<a href="" class="btn btn-outline-primary btn-sm float-left"><i class="fa fa-heart"></i></a>			
+					<span class="float-right"> &nbsp;&nbsp;</span>
+					<a href="" class="btn btn-outline-primary btn-sm float-right"><i class="fa fa-shopping-cart"></i></a>
+					<!-- price-wrap.// -->
+				</div>
+				</div>
+			</a>
+			</li>
+			<li class="col-6 col-md-3">
+				<a href="#" class="itembox"> 
+					<div class="card-body">
+					<p class="word-limit">montre noir swagg</p>
+					<div class="price-wrap h6 float-left">
+						<span class="price-new">$1280</span> <del class="price-old ">$1980</del>
+					</div>
+					<div class="float-right">
+						<img class="img-sm float-right " src="images/items/7.jpg">
+					</div>
+					
+					<div class="bottom-wrap">
+						<a href="" class="btn btn-outline-primary btn-sm float-left"><i class="fa fa-heart"></i></a>			
+						<span class="float-right"> &nbsp;&nbsp;</span>
+						<a href="" class="btn btn-outline-primary btn-sm float-right"><i class="fa fa-shopping-cart"></i></a>
+						<!-- price-wrap.// -->
+					</div>
+					</div>
+				</a>
+			</li>
+			<li class="col-6 col-md-3">
+				<a href="#" class="itembox"> 
+					<div class="card-body">
+					<p class="word-limit">chaussure nike</p>
+					<div class="price-wrap h6 float-left">
+						<span class="price-new">$1280</span> <del class="price-old ">$1980</del>
+					</div>
+					<div class="float-right">
+						<img class="img-sm float-right " src="images/items/8.jpg">
+					</div>
+					
+					<div class="bottom-wrap">
+						<a href="" class="btn btn-outline-primary btn-sm float-left"><i class="fa fa-heart"></i></a>			
+						<span class="float-right"> &nbsp;&nbsp;</span>
+						<a href="" class="btn btn-outline-primary btn-sm float-right"><i class="fa fa-shopping-cart"></i></a>
+						<!-- price-wrap.// -->
+					</div>
+					</div>
+				</a>
+				</li>
+	</ul>
+	<ul class="row no-gutters border-cols">
+		<li class="col-6 col-md-3">
+		<a href="#" class="itembox"> 
+			<div class="card-body">
+			<p class="word-limit">sac a main rouge</p>
+			<div class="price-wrap h6 float-left">
+				<span class="price-new">$1280</span> <del class="price-old ">$1980</del>
+			</div>
+			<div class="float-right">
+				<img class="img-sm float-right " src="images/items/12.png">
+			</div>
+			
+			<div class="bottom-wrap">
+				<a href="" class="btn btn-outline-primary btn-sm float-left"><i class="fa fa-heart"></i></a>			
+				<span class="float-right"> &nbsp;&nbsp;</span>
+				<a href="" class="btn btn-outline-primary btn-sm float-right"><i class="fa fa-shopping-cart"></i></a>
+				<!-- price-wrap.// -->
+			</div>
+			</div>
+		</a>
+		</li>
+		<li class="col-6 col-md-3">
+			<a href="#" class="itembox"> 
+				<div class="card-body">
+				<p class="word-limit">T-shirt noir</p>
+				<div class="price-wrap h6 float-left">
+					<span class="price-new">$1280</span> <del class="price-old ">$1980</del>
+				</div>
+				<div class="float-right">
+					<img class="img-sm float-right " src="images/items/13.png">
+				</div>
+				
+				<div class="bottom-wrap">
+					<a href="" class="btn btn-outline-primary btn-sm float-left"><i class="fa fa-heart"></i></a>			
+					<span class="float-right"> &nbsp;&nbsp;</span>
+					<a href="" class="btn btn-outline-primary btn-sm float-right"><i class="fa fa-shopping-cart"></i></a>
+					<!-- price-wrap.// -->
+				</div>
+				</div>
+			</a>
+			</li>
+			<li class="col-6 col-md-3">
+				<a href="#" class="itembox"> 
+					<div class="card-body">
+					<p class="word-limit">chemise manches longues bas arrondi femme blanc</p>
+					<div class="price-wrap h6 float-left">
+						<span class="price-new">$1280</span> <del class="price-old ">$1980</del>
+					</div>
+					<div class="float-right">
+						<img class="img-sm float-right " src="images/items/14.jpg">
+					</div>
+					
+					<div class="bottom-wrap">
+						<a href="" class="btn btn-outline-primary btn-sm float-left"><i class="fa fa-heart"></i></a>			
+						<span class="float-right"> &nbsp;&nbsp;</span>
+						<a href="" class="btn btn-outline-primary btn-sm float-right"><i class="fa fa-shopping-cart"></i></a>
+						<!-- price-wrap.// -->
+					</div>
+					</div>
+				</a>
+			</li>
+			<li class="col-6 col-md-3">
+				<a href="#" class="itembox"> 
+					<div class="card-body">
+					<p class="word-limit">chaussure nike</p>
+					<div class="price-wrap h6 float-left">
+						<span class="price-new">$1280</span> <del class="price-old ">$1980</del>
+					</div>
+					<div class="float-right">
+						<img class="img-sm float-right " src="images/items/15.jpg">
+					</div>
+					
+					<div class="bottom-wrap">
+						<a href="" class="btn btn-outline-primary btn-sm float-left"><i class="fa fa-heart"></i></a>			
+						<span class="float-right"> &nbsp;&nbsp;</span>
+						<a href="" class="btn btn-outline-primary btn-sm float-right"><i class="fa fa-shopping-cart"></i></a>
+						<!-- price-wrap.// -->
+					</div>
+					</div>
+				</a>
+				</li>
+	</ul>
+		</div> <!-- col.// -->
+	</div> <!-- row.// -->
+		
+	</div> <!-- card.// -->
+	
+	</div> <!-- container .//  -->
+	</section>
 <!-- ========================= SECTION REQUEST .END// ========================= -->
 
 <!-- ========================= SECTION ITEMS ========================= -->
-<section class="section-request bg padding-y-sm reveal">
+<!--<section class="section-request bg padding-y-sm reveal">
 <div class="container">
 	<header class="section-heading heading-line reveal-1">
 		<h4 class="title-section bg text-uppercase">PRODUITS RECOMMANDES</h4>
 	</header>
-	<!-- ============== COMPONENT SLIDER ITEMS OWL  ============= -->
+	============== COMPONENT SLIDER ITEMS OWL  ============= 
 	<div class="slider-items-owl owl-carousel owl-theme">
 		<div class=" item-slide reveal-2">
 			<figure class="card card-product">
@@ -784,7 +872,7 @@
 							</ul>
 							<div class="label-rating">132 reviews</div>
 							<div class="label-rating">154 orders </div>
-						</div> <!-- rating-wrap.// -->
+						</div>
 				</figcaption>
 				<div class="bottom-wrap">
 					<a href="" class="btn btn-outline-primary btn-sm float-right"><i class="fa fa-shopping-cart"></i></a>
@@ -792,8 +880,8 @@
 					<a href="" class="btn btn-outline-primary btn-sm float-right"><i class="fa fa-heart"></i></a>			
 					<div class="price-wrap h5">
 						<span class="price-new">$1280</span> <del class="price-old">$1980</del>
-					</div> <!-- price-wrap.// -->
-				</div> <!-- bottom-wrap.// -->
+					</div> 
+				</div>
 			</figure>
 		</div>
 		<div class=" item-slide reveal-3">
@@ -816,7 +904,7 @@
 							</ul>
 							<div class="label-rating">132 reviews</div>
 							<div class="label-rating">154 orders </div>
-						</div> <!-- rating-wrap.// -->
+						</div> 
 				</figcaption>
 				<div class="bottom-wrap">
 					<a href="" class="btn btn-outline-secondary btn-sm float-right">acheter</a>
@@ -824,8 +912,8 @@
 					<a href="" class="btn btn-outline-warning btn-sm float-right"><i class="fa fa-heart"></i></a>			
 					<div class="price-wrap h5">
 						<span class="price-new">$1280</span> <del class="price-old">$1980</del>
-					</div> <!-- price-wrap.// -->
-				</div> <!-- bottom-wrap.// -->
+					</div> 
+				</div> 
 			</figure>
 		</div>
 		<div class=" item-slide reveal-4">
@@ -848,7 +936,7 @@
 							</ul>
 							<div class="label-rating">132 reviews</div>
 							<div class="label-rating">154 orders </div>
-						</div> <!-- rating-wrap.// -->
+						</div> 
 				</figcaption>
 				<div class="bottom-wrap">
 					<a href="" class="btn btn-outline-secondary btn-sm float-right">acheter</a>
@@ -856,8 +944,8 @@
 					<a href="" class="btn btn-outline-warning btn-sm float-right"><i class="fa fa-heart"></i></a>			
 					<div class="price-wrap h5">
 						<span class="price-new">$1280</span> <del class="price-old">$1980</del>
-					</div> <!-- price-wrap.// -->
-				</div> <!-- bottom-wrap.// -->
+					</div> 
+				</div> 
 			</figure>
 		</div>
 		<div class=" item-slide reveal-1">
@@ -880,7 +968,7 @@
 							</ul>
 							<div class="label-rating">132 reviews</div>
 							<div class="label-rating">154 orders </div>
-						</div> <!-- rating-wrap.// -->
+						</div> 
 				</figcaption>
 				<div class="bottom-wrap">
 					<a href="" class="btn btn-outline-secondary btn-sm float-right">acheter</a>
@@ -888,8 +976,8 @@
 					<a href="" class="btn btn-outline-warning btn-sm float-right"><i class="fa fa-heart"></i></a>			
 					<div class="price-wrap h5">
 						<span class="price-new">$1280</span> <del class="price-old">$1980</del>
-					</div> <!-- price-wrap.// -->
-				</div> <!-- bottom-wrap.// -->
+					</div>
+				</div> 
 			</figure>
 		</div>
 		<div class=" item-slide">
@@ -912,7 +1000,7 @@
 							</ul>
 							<div class="label-rating">132 reviews</div>
 							<div class="label-rating">154 orders </div>
-						</div> <!-- rating-wrap.// -->
+						</div> 
 				</figcaption>
 				<div class="bottom-wrap">
 					<a href="" class="btn btn-outline-primary btn-sm float-right"><i class="fa fa-shopping-cart"></i></a>
@@ -920,8 +1008,8 @@
 					<a href="" class="btn btn-outline-primary btn-sm float-right"><i class="fa fa-heart"></i></a>			
 					<div class="price-wrap h5">
 						<span class="price-new">$1280</span> <del class="price-old">$1980</del>
-					</div> <!-- price-wrap.// -->
-				</div> <!-- bottom-wrap.// -->
+					</div> 
+				</div> 
 			</figure>
 		</div>
 		<div class=" item-slide">
@@ -944,7 +1032,7 @@
 							</ul>
 							<div class="label-rating">132 reviews</div>
 							<div class="label-rating">154 orders </div>
-						</div> <!-- rating-wrap.// -->
+						</div> 
 				</figcaption>
 				<div class="bottom-wrap">
 					<a href="" class="btn btn-outline-primary btn-sm float-right"><i class="fa fa-shopping-cart"></i></a>
@@ -952,8 +1040,8 @@
 					<a href="" class="btn btn-outline-primary btn-sm float-right"><i class="fa fa-heart"></i></a>			
 					<div class="price-wrap h5">
 						<span class="price-new">$1280</span> <del class="price-old">$1980</del>
-					</div> <!-- price-wrap.// -->
-				</div> <!-- bottom-wrap.// -->
+					</div> 
+				</div> 
 			</figure>
 		</div>
 		<div class=" item-slide">
@@ -976,7 +1064,7 @@
 							</ul>
 							<div class="label-rating">132 reviews</div>
 							<div class="label-rating">154 orders </div>
-						</div> <!-- rating-wrap.// -->
+						</div> 
 				</figcaption>
 				<div class="bottom-wrap">
 					<a href="" class="btn btn-outline-primary btn-sm float-right"><i class="fa fa-shopping-cart"></i></a>
@@ -984,14 +1072,14 @@
 					<a href="" class="btn btn-outline-primary btn-sm float-right"><i class="fa fa-heart"></i></a>			
 					<div class="price-wrap h5">
 						<span class="price-new">$1280</span> <del class="price-old">$1980</del>
-					</div> <!-- price-wrap.// -->
-				</div> <!-- bottom-wrap.// -->
+					</div> 
+				</div> 
 			</figure>
 		</div>
 	</div>
 
-</div><!-- container // -->
-</section>
+</div>
+</section>-->
 <!-- ========================= SECTION ITEMS .END// ========================= -->
 
 <!-- ========================= SECTION LINKS ========================= -->
@@ -1049,7 +1137,7 @@
 		<input class="form-control" placeholder="Votre Email" type="email">
 		</div> <!-- col.// -->
 		<div class="col-4">
-		<button type="submit" class="btn btn-block btn-warning" style="background-color: #FF5800;"> <i class="fa fa-envelope"></i> Souscrire </button>
+		<button type="submit" class="btn btn-outline-primary" style="border:1px solid #00044C;" > <i class="fa fa-envelope"></i> Souscrire </button>
 		</div> <!-- col.// -->
 </form>
 <small class="form-text text-white-50">nous ne partagerons jamais votre addresse e-mail avec un tiers </small>
