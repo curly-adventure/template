@@ -238,33 +238,7 @@ z-index: 20;
     transition-delay: .3s;
 }
 
-/* mixin for multiline */
-@mixin multiLineEllipsis($lineHeight: 1.2em, $lineCount: 1, $bgColor: white){
-	overflow: hidden;
-	position: relative;
-	line-height: $lineHeight;
-	max-height: $lineHeight * $lineCount; 
-	text-align: justify;
-	margin-right: -1em;
-	padding-right: 1em;
-	&:before {
-	  content: '...';
-	  position: absolute;
-	  right: 0;
-	  bottom: 0;
-	}
-	&:after {
-	  content: '';
-	  position: absolute;
-	  right: 0;
-	  width: 1em;
-	  height: 1em;
-	  margin-top: 0.2em;
-	  background: $bgColor;
-	}
-  }
-  
-.word-limit{color: black;font-weight: bold; 
-	@include multiLineEllipsis($lineHeight: 1.2em, $lineCount: 2, $bgColor: black;}
+
+.word-limit{color: black;font-weight: bold; text-overflow: ellipsis;white-space: nowrap;overflow: hidden;height: 100px;}
 	.word-limit:hover{color: blue;}
 	.price-new{color: red;}
