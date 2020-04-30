@@ -262,22 +262,24 @@
 		<aside class="col-md-2">
 	
 		<article class="filter-group">
-			<h6 class="title">
-				<a href="#" class="dropdown-toggle" data-toggle="collapse" data-target="#collapse_1">	 Product type </a>
-			</h6>
-			<div class="filter-content collapse show" id="collapse_1" style="">
-				<div class="inner">
-					<ul class="list-menu">
-						<li><a href="#">Shorts  </a></li>
-						<li><a href="#">Trousers </a></li>
-						<li><a href="#">Sweaters  </a></li>
-						<li><a href="#">Clothes  </a></li>
-						<li><a href="#">Home items </a></li>
-						<li><a href="#">Jackats</a></li>
-						<li><a href="#">Somethings </a></li>
-					</ul>
-				</div> <!-- inner.// -->
-			</div>
+			<div class="row">
+  <div class="col-10">
+    <div class="list-group" id="list-tab" role="tablist">
+      <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">product type</a>
+      <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">short</a>
+      <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">trousers</a>
+      <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">items</a>
+    </div>
+  </div>
+  <div class="col-8">
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">...</div>
+      <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
+      <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
+      <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">Eblack</div>
+    </div>
+  </div>
+</div>
 		</article> <!-- filter-group  .// -->
 		<article class="filter-group">
 			<h6 class="title">

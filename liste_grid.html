@@ -248,15 +248,24 @@
 		<div class="row">
 			
 			<nav class="col-md-18-24"> 
-			<ol class="breadcrumb">
-				<li class="breadcrumb-item"><a href="#">Accueil</a></li>
-				<li class="breadcrumb-item"><a href="#">categories</a></li>
-				<li class="breadcrumb-item"><a href="#">Sous categories</a></li>
-				<li class="breadcrumb-item active" aria-current="page">produits</li>
-			</ol>  
+			<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">produits</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">categories</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">sous categories</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#">blabal</a>
+  </li>
+</ul> 
 			</nav> <!-- col.// -->
 			
-		</div> <!-- row.// -->
+		</div>
+		 <!-- row.// -->
 	
 		<div class="container">
 
@@ -272,84 +281,47 @@
 		<div class="col-md-3-24"> <strong>Filtre par:</strong> </div> <!--col.// -->
 		<div class="col-md-21-24"> 
 			<ul class="list-inline">
-			  <li class="list-inline-item dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">   Type de produit</a>
-				<div class="dropdown-menu p-3" style="max-width:400px;">	
-				  <label class="form-check">
-					  <a href="#">
-					   <input type="checkbox" class="form-check-input"> Audio
-					</a>
-				  </label>
-				  <label class="form-check">
-					  <a href="#">
-					   <input type="checkbox" class="form-check-input"> Accessoire
-					</a>
-				  </label>
-				  <label class="form-check">
-					  <a href="#">
-					   <input type="checkbox" class="form-check-input"> Mode Homme
-					</a>
-				  </label>
-				  <label class="form-check">
-					<a href="#">
-					 <input type="checkbox" class="form-check-input"> Sport
-				  </a>
-				</label>
-				</div> <!-- dropdown-menu.// -->
-			  </li>
+			  <div class="btn-group">
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Action
+  </button>
+  <div class="dropdown-menu">
+    <a class=" btn btn-primary dropdown-item" href="#">produits</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">Separated link</a>
+  </div>
+</div>
 			
-			  <li class="list-inline-item dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Color</a>
-				<div class="dropdown-menu p-3" style="max-width:400px;">	
-				  <label class="form-check">
-					  <a href="#">
-					   <input type="checkbox" class="form-check-input"> blanc
-					</a>
-				  </label>
-				  <label class="form-check">
-					  <a href="#">
-					   <input type="checkbox" class="form-check-input"> bleu 
-					</a>
-				  </label>
-				  <label class="form-check">
-					  <a href="#">
-					   <input type="checkbox" class="form-check-input"> noir
-					</a>
-				  </label>
-				  <label class="form-check">
-					<a href="#">
-					 <input type="checkbox" class="form-check-input"> gris
-				  </a>
-				</label>
-				</div> <!-- dropdown-menu.// -->
-			  </li>
-			  
-			  <li class="list-inline-item dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"> Taille</a>
-				<div class="dropdown-menu p-3" style="max-width:400px;">	
-				  <label class="form-check">
-					  <a href="#">
-					   <input type="checkbox" class="form-check-input"> X
-					</a>
-				  </label>
-				  <label class="form-check">
-					  <a href="#">
-					   <input type="checkbox" class="form-check-input"> XL
-					</a>
-				  </label>
-				  <label class="form-check">
-					  <a href="#">
-					   <input type="checkbox" class="form-check-input"> LG
-					</a>
-				  </label>
-				  <label class="form-check">
-					<a href="#">
-					 <input type="checkbox" class="form-check-input"> XXL
-				  </a>
-				</label>
-				</div> <!-- dropdown-menu.// -->
-			  </li>
-			  
-			  <li class="list-inline-item">
+			 <div class="btn-group">
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Action
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">Separated link</a>
+  </div>
+</div>
+			  <div class="btn-group">
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Action
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">Separated link</a>
+  </div>
+</div>
+			  <div style="margin-left: 700px;">
+			  		  <li class="list-inline-item"><p class="text-primary">trier par</p>
 				
-				trier par<select class="mr-2 form-control">
+				<select class="mr-2 form-control" >
 					<option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">best produits</font></font></option>
 					<option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tendance</font></font></option>
 					<option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Le plus populaire</font></font></option>
@@ -358,7 +330,8 @@
 					<option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">mieux noté</font></font></option>
 
 				</select>
-				</li>
+				</li></div>
+	
 				<li class="list-inline-item">
 				
 			</li>
@@ -391,12 +364,14 @@
 		<figure class="card card-product">
 			<div class="img-wrap"> <img src="images/items/1.jpg"></div>
 			<figcaption class="info-wrap">
-				<a href="#" class="title">Good item name</a>
+				 <font color="blue">Good item name</font>
 				<div class="price-wrap">
 					<span class="price-new">$1280</span>
 					<del class="price-old">$1980</del>
-				</div> <!-- price-wrap.// -->
+					
+				</div><a href="#"><button type="button" class="btn btn-outline-primary">voir produit</button></a> <!-- price-wrap.// -->
 			</figcaption>
+
 		</figure> <!-- card // -->
 	</div> <!-- col // -->
 	<div class="col-md-3 col-sm-6">
@@ -406,7 +381,8 @@
 				<a href="#" class="title">The name of product</a>
 				<div class="price-wrap">
 					<span class="price-new">$280</span>
-				</div> <!-- price-wrap.// -->
+					
+				</div><a href="#"><button type="button" class="btn btn-outline-primary">voir produit</button></a> <!-- price-wrap.// -->
 			</figcaption>
 		</figure> <!-- card // -->
 	</div> <!-- col // -->
@@ -417,7 +393,7 @@
 				<a href="#" class="title">Good item name</a>
 				<div class="price-wrap">
 					<span class="price-new">$280</span>
-				</div> <!-- price-wrap.// -->
+				</div><a href="#"><button type="button" class="btn btn-outline-primary">voir produit</button></a><!-- price-wrap.// -->
 			</figcaption>
 		</figure> <!-- card // -->
 	</div> <!-- col // -->
@@ -428,7 +404,8 @@
 				<a href="#" class="title">Good item name</a>
 				<div class="price-wrap">
 					<span class="price-new">$280</span>
-				</div> <!-- price-wrap.// -->
+
+				</div><a href="#"><button type="button" class="btn btn-outline-primary">voir produit</button></a> <!-- price-wrap.// -->
 			</figcaption>
 		</figure> <!-- card // -->
 	</div> <!-- col // -->
@@ -440,7 +417,8 @@
 				<div class="price-wrap">
 					<span class="price-new">$1280</span>
 					<del class="price-old">$1980</del>
-				</div> <!-- price-wrap.// -->
+				</div>
+				<a href="#"><button type="button" class="btn btn-outline-primary">voir produit</button></a> <!-- price-wrap.// -->
 			</figcaption>
 		</figure> <!-- card // -->
 	</div> <!-- col // -->
@@ -451,7 +429,8 @@
 				<a href="#" class="title">The name of product</a>
 				<div class="price-wrap">
 					<span class="price-new">$280</span>
-				</div> <!-- price-wrap.// -->
+				</div>
+				<a href="#"><button type="button" class="btn btn-outline-primary">voir produit</button></a> <!-- price-wrap.// -->
 			</figcaption>
 		</figure> <!-- card // -->
 	</div> <!-- col // -->
@@ -462,7 +441,8 @@
 				<a href="#" class="title">The name of product</a>
 				<div class="price-wrap">
 					<span class="price-new">$280</span>
-				</div> <!-- price-wrap.// -->
+				</div> 
+				<a href="#"><button type="button" class="btn btn-outline-primary">voir produit</button></a><!-- price-wrap.// -->
 			</figcaption>
 		</figure> <!-- card // -->
 	</div> <!-- col // -->
@@ -473,7 +453,7 @@
 				<a href="#" class="title">The name of product</a>
 				<div class="price-wrap">
 					<span class="price-new">$280</span>
-				</div> <!-- price-wrap.// -->
+				</div><a href="#"><button type="button" class="btn btn-outline-primary">voir produit</button></a> <!-- price-wrap.// -->
 			</figcaption>
 		</figure> <!-- card // -->
 	</div> <!-- col // -->
@@ -485,10 +465,11 @@
 				<div class="price-wrap">
 					<span class="price-new">$1280</span>
 					<del class="price-old">$1980</del>
-				</div> <!-- price-wrap.// -->
+				</div> <a href="#"><button type="button" class="btn btn-outline-primary">voir produit</button></a><!-- price-wrap.// -->
 			</figcaption>
 		</figure> <!-- card // -->
-	</div> <!-- col // -->
+	</div> 
+	<!-- col // -->
 	<div class="col-md-3 col-sm-6">
 		<figure class="card card-product">
 			<div class="img-wrap"> <img src="images/items/3.jpg"></div>
@@ -496,7 +477,7 @@
 				<a href="#" class="title">The name of product</a>
 				<div class="price-wrap">
 					<span class="price-new">$280</span>
-				</div> <!-- price-wrap.// -->
+				</div><a href="#"><button type="button" class="btn btn-outline-primary">voir produit</button></a> <!-- price-wrap.// -->
 			</figcaption>
 		</figure> <!-- card // -->
 	</div> <!-- col // -->
@@ -507,7 +488,7 @@
 				<a href="#" class="title">The name of product</a>
 				<div class="price-wrap">
 					<span class="price-new">$280</span>
-				</div> <!-- price-wrap.// -->
+				</div><a href="#"><button type="button" class="btn btn-outline-primary">voir produit</button></a> <!-- price-wrap.// -->
 			</figcaption>
 		</figure> <!-- card // -->
 	</div> <!-- col // -->
@@ -518,12 +499,24 @@
 				<a href="#" class="title">The name of product</a>
 				<div class="price-wrap">
 					<span class="price-new">$280</span>
-				</div> <!-- price-wrap.// -->
+				</div> <a href="#"><button type="button" class="btn btn-outline-primary">voir produit</button></a><!-- price-wrap.// -->
 			</figcaption>
-		</figure> <!-- card // -->
+		</figure> 
+		<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+  <div class="btn-group mr-2" role="group" aria-label="First group">
+    <button type="button" class="btn btn-outline-primary">1</button>
+    <button type="button" class="btn btn-outline-primary">2</button>
+    <button type="button" class="btn btn-outline-primary">3</button>
+    <button type="button" class="btn btn-outline-primary">4</button>
+  
+  <div class="btn-group mr-2" role="group" aria-label="Second group">
+    <button type="button" class="btn btn-outline-primary">5</button>
+     <button type="button" class="btn btn-outline-primary">Next</button><!-- card // -->
 	</div> <!-- col // -->
 	</div> <!-- row.// -->
 	
+   
+</div>
 	
 	</div><!-- container // -->
 	</section>
@@ -553,6 +546,7 @@
 
 </div> <!-- container // -->
 </section>
+
 <!-- ========================= SECTION SUBSCRIBE END.//========================= -->
 
 <!-- ========================= FOOTER ========================= -->
@@ -612,8 +606,7 @@
 		<section class="footer-bottom text-center">
 		
 			<p class="text-white"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><!--©-->Copyright &copy;<script>document.write(new Date().getFullYear());</script> Eblack ci, Tous droits réservés ! </font></font></p>
-			<p class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ce site à été fait avec <i class="fas fa-heart" aria-hidden="true"></i> par <a href="" target="_blank">kingscode teams</a></font></font></p>
-				<br>
+			<p class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ce site à été fait avec <i class="fas fa-heart" aria-hidden="true"></i> par <a href="" target="_blank">kingscode teams</a></font></font></p>		<br>
 		</section>
 	</div><!-- //container -->
 </footer>
