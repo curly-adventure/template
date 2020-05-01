@@ -242,3 +242,7 @@ z-index: 20;
 .word-limit{color: black;font-weight: bold; text-overflow: ellipsis;white-space: nowrap;overflow: hidden;height: 100px;}
 	.word-limit:hover{color: blue;}
 	.price-new{color: red;}
+
+#titre-cate{
+	font-size: 70px;font-weight: bold;
+}

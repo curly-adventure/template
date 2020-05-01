@@ -36,11 +36,13 @@
 	.section-6-box { text-align: center; }
 	.section-6-social a { margin: 0 5px 10px 5px; }
 	.section-6-form { margin-bottom: 30px; text-align: center; }
+
 	
 }
 
 @media (max-width: 575px) {
-	
+	#titre-cate{ font-size: 28px; }
+	#desc-cate{ font-size: 16px; }
 	h1, h2 { font-size: 22px; }
 	h3 { font-size: 18px; }
 
