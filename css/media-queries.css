@@ -41,8 +41,9 @@
 }
 
 @media (max-width: 575px) {
-	#titre-cate{ font-size: 28px; }
-	#desc-cate{ font-size: 16px; }
+	#titre-cate{ font-size: 30px; }
+	#desc-cate{ font-size: 14px; }
+	
 	h1, h2 { font-size: 22px; }
 	h3 { font-size: 18px; }
 

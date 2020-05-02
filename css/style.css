@@ -239,7 +239,7 @@ z-index: 20;
 }
 
 
-.word-limit{color: black;font-weight: bold; text-overflow: ellipsis;white-space: nowrap;overflow: hidden;height: 100px;}
+.word-limit{color: black;font-weight: bold; text-overflow: ellipsis;white-space: nowrap;overflow: hidden;height: 30px;}
 	.word-limit:hover{color: blue;}
 	.price-new{color: red;}
 
