@@ -156,11 +156,11 @@
 		<div id="scrollUp">
 		<a href="#top"><img src="images/to_top.png"/></a>
 		</div>
-		<nav class="navbar  fixed-top   d-lg-none" style="height: 70px;background-color: white;box-shadow: 0px 0px 5px 0px #eee">
+		<nav class="navbar  fixed-top   d-lg-none" style="height: auto;background-color: white;box-shadow: 0px 0px 5px 0px #eee">
 		<a class="btn open-menu" href="#" role="button" style="font-size: 20px;color: #002687;"><i class="fas fa-align-left"></i><!--<i class="fas fa-align-left"></i> --></a>
 		<a class="navbar-brand" href="index.html" style="color: white;font-weight: bold;"><img class="logo" src="images/eblack.png"></a>
 		
-		<div class="widget-header dropdown" style="margin-right: -50px;padding: 0;color: #002687">
+		<div class="widget-header dropdown" style="margin-right: -40px;padding: 0;color: #002687">
 			<a href="connexion.html" class="ml-1 icontext" >
 				<div class="icon-wrap"><i class="icon-sm  far fa-user-circle"style="color: #002687;"></i></div>
 			</a>
@@ -175,7 +175,20 @@
 					</span>
 				</div>
 			</a>
-		</div>	
+		</div>
+		<div style="width: 100%;margin-left: 10px;margin-top: -10px; ">
+			<form action="#" class="py-1 search-header d-lg-none" >
+				<div class="input-group " >
+					
+					<input type="text" class="form-control" style="border: 1px solid #002687;border-right: none; " placeholder="rechercher un produit, une marque ou une categories">
+					<div class="input-group-append">
+					  <button  onclick="if(!$(search).value) return false;" class="btn btn-primary" style="border: 1px solid #002687;background-color: white;border-left: none;" type="submit">
+						<i style="color:#002687;"class="fa fa-search"></i>
+					  </button>
+					</div>
+				</div>
+			</form>
+		</div>
 	  </nav>
 	  
 <section class=" d-none d-lg-block  ">
