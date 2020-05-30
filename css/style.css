@@ -86,6 +86,8 @@ strong { font-weight: 500; }
 
 /* sidebar light */
 
+
+
 .sidebar.light { background: #fff; color: #888; }
 
 .sidebar.light .dismiss { background: #ddd; color: #888; }
@@ -246,3 +248,4 @@ z-index: 20;
 #titre-cate{
 	font-size: 70px;font-weight: bold;
 }
+.breadcrumb a{color: black;}
